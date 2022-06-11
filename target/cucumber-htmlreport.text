@@ -1,0 +1,8 @@
+Feature: TechFios Billing Login Functionality Validation
+
+  Scenario: User should be able to login valid credentials # src/test/java/features/TechFiosLogin.feature:3
+    Given User is on Techfios login page                   # LoginStepDefination.user_is_on_techfios_login_page()
+    When User enters username as "demo@techfios.com"       # LoginStepDefination.user_enters_username_as_(String)
+    When User enters password as "abc123"                  # LoginStepDefination.user_enters_password_as(String)
+    When User click signin button                          # LoginStepDefination.user_click_signin_button()
+    Then User should land on dashboard page                # LoginStepDefination.user_should_land_on_dashboard_page()
